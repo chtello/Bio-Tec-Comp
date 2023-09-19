@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Tec Company</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="conteiner">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 20%;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="/logo.png" class="ImgP">
+            <span class="fs-4">Bio-Tec Company</span>
+        </a>
+        <button type="button" class="Genes" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Genes</button>
+        
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Trabaja con Genes</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Secuencia ADN</h5>
+                    <input type="text" class="form-control" id="barra"/>
+                    <input type="text" name="adn" class="form-control" id="barra2"/>
+                    <button type="button" class="btn btn-primary" id="CreateGe">Generar Secuencia</button>
+                    
+                </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title">Traducción ARNm</h5>
+                        <input type="text" name="arnm" class="form-control" id="barra3"/>
+                        <button type="button" class="btn btn-primary" id="CreateTr">Traducir</button>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title">Polipéptidos(Proteinas)</h5>
+                        <input type="text" name="polipéptidos" class="form-control" id="barra4"/>
+                        <button type="button" class="btn btn-primary" id="CreatePo">Traducir Proteinas</button>
+                        
+                    </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="Delte">Eliminar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Listo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="Genes" data-bs-toggle="modal" data-bs-target="#exampleModal">Hipermetilación</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Genes Hipermetilados</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h4 class="modal-title">Gen ZAR1</h4> 
+                <div class="modal-body">
+                    <h5 class="modal-title">Secuencia Genetica</h5>
+                    <input type="text" class="form-control" id="barra5"/>
+                    <button type="button" class="btn btn-primary" id="CrSG">Generar Secuencia</button>
+                </div>                    
+                <div class="modal-body">
+                    <h5 class="modal-title">¿Habra metilación?</h5>
+                    <input type="text" class="form-control" id="barra6"/>
+                    <h5 class="modal-title">¿Cual Es Su Función?</h5>
+                    <input type="text" class="form-control" id="barra7"/>
+                    <h5 class="modal-title">¿Qué Mecanismo Epigenetico Es?</h5>
+                    <input type="text" class="form-control" id="barra8"/>
+                    <h5 class="modal-title">¿Qué Canseres Tiene Asociado?</h5>
+                    <input type="text" class="form-control" id="barra9"/>
+                    <button type="button" class="btn btn-primary" id="AnGn1">Analisar Gen</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="Delte2">Eliminar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Listo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="/">Pag1</a></li>
+            <li class="page-item"><a class="page-link" href="/GGuar">Pag2</a></li>
+            <li class="page-item"><a class="page-link" href="/N">Pag3</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="minicont">
+        <a class="NG" type="submit" href="/NGn">agregar</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#id</th>
+                    <th scope="col">ADN</th>
+                    <th scope="col">ARNm</th>
+                    <th scope="col">Polipéptidos</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer1">
+        <p class="name">Cristian Tello    /   Martina Nievas   </p>
+    </div>
+</div>
+
+<script src="/Gen.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
