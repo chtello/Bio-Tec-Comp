@@ -1,5 +1,8 @@
 const express = require("express");
 const router = express.Router();
+    router.get("/", (req, res) => {
+    res.render("index");
+});
 
 router.get("/N", (req, res) => {
     res.render("N");
@@ -12,9 +15,6 @@ router.get("/NGn", (req, res) => {
 });
 router.get("/ZAR1", (req, res) => {
     res.render("ZAR1");
-});
-    router.get("/", (req, res) => {
-    res.render("index");
 });
 
 

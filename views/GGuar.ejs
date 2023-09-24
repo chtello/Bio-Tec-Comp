@@ -22,30 +22,30 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="modal-title">Trabaja con Genes</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <h5 class="modal-title">Secuencia ADN</h5>
                     <input type="text" class="form-control" id="barra"/>
                     <input type="text" name="adn" class="form-control" id="barra2"/>
+                    <p class="text2">El siguiente boton nos va a generara una seguencia de ADN aleatoria y su contraparte</p>
                     <button type="button" class="btn btn-primary" id="CreateGe">Generar Secuencia</button>
-                    
                 </div>
-                    <div class="modal-body">
-                        <h5 class="modal-title">Traducción ARNm</h5>
-                        <input type="text" name="arnm" class="form-control" id="barra3"/>
-                        <button type="button" class="btn btn-primary" id="CreateTr">Traducir</button>
-                        
-                    </div>
-                    <div class="modal-body">
-                        <h5 class="modal-title">Polipéptidos(Proteinas)</h5>
-                        <input type="text" name="polipéptidos" class="form-control" id="barra4"/>
-                        <button type="button" class="btn btn-primary" id="CreatePo">Traducir Proteinas</button>
-                        
-                    </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Traducción ARNm</h5>
+                    <input type="text" name="arnm" class="form-control" id="barra3"/>
+                    <p class="text2">El siguiente boton nos va a traducir la segunda secuencia que generamos anteriormente para poder ser trasladados por el ARN mensajero</p>
+                    <button type="button" class="btn btn-primary" id="CreateTr">Traducir</button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Polipéptidos(Proteinas)</h5>
+                    <input type="text" name="polipéptidos" class="form-control" id="barra4"/>
+                    <p class="text2">El siguiente boton nos va a traducir la secuencia del ARNm a proteinas</p>
+                    <button type="button" class="btn btn-primary" id="CreatePo">Traducir Proteinas</button>
+                </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="Delte">Eliminar</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Listo</button>
+                    <button type="button" class="btn btn-secondary" id="Delte">Eliminar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Listo</button>
                 </div>
             </div>
         </div>
@@ -62,8 +62,9 @@
                 <div class="modal-body">
                     <h5 class="modal-title">Secuencia Genetica</h5>
                     <input type="text" class="form-control" id="barra5"/>
-                    <button type="button" class="btn btn-primary" id="CrSG">Generar Secuencia</button>
-                </div>                    
+                    <p class="text2">El siguiente boton nos va a generara una seguencia de ADN aleatoria</p>
+                    <button type="button" class="btn btn-primary" id="CrSG" >Generar Secuencia</button>
+                </div>
                 <div class="modal-body">
                     <h5 class="modal-title">¿Habra metilación?</h5>
                     <input type="text" class="form-control" id="barra6"/>
@@ -73,6 +74,7 @@
                     <input type="text" class="form-control" id="barra8"/>
                     <h5 class="modal-title">¿Qué Canseres Tiene Asociado?</h5>
                     <input type="text" class="form-control" id="barra9"/>
+                    <p class="text2">El siguiente boton va a analizar la secuencia que generamos anteriormente y si en la secuencia se precenta el caso "C,G" nos respondera las preguntas</p>
                     <button type="button" class="btn btn-primary" id="AnGn1">Analisar Gen</button>
                 </div>
                 <div class="modal-footer">

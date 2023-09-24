@@ -22,30 +22,30 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="modal-title">Trabaja con Genes</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <h5 class="modal-title">Secuencia ADN</h5>
                     <input type="text" class="form-control" id="barra"/>
-                    <input type="text" class="form-control" id="barra2"/>
+                    <input type="text" name="adn" class="form-control" id="barra2"/>
+                    <p class="text2">El siguiente boton nos va a generara una seguencia de ADN aleatoria y su contraparte</p>
                     <button type="button" class="btn btn-primary" id="CreateGe">Generar Secuencia</button>
-                    
                 </div>
-                    <div class="modal-body">
-                        <h5 class="modal-title">Traducción ARNm</h5>
-                        <input type="text" class="form-control" id="barra3"/>
-                        <button type="button" class="btn btn-primary" id="CreateTr">Traducir</button>
-                        
-                    </div>
-                    <div class="modal-body">
-                        <h5 class="modal-title">Polipéptidos(Proteinas)</h5>
-                        <input type="text" class="form-control" id="barra4"/>
-                        <button type="button" class="btn btn-primary" id="CreatePo">Traducir Proteinas</button>
-                        
-                    </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Traducción ARNm</h5>
+                    <input type="text" name="arnm" class="form-control" id="barra3"/>
+                    <p class="text2">El siguiente boton nos va a traducir la segunda secuencia que generamos anteriormente para poder ser trasladados por el ARN mensajero</p>
+                    <button type="button" class="btn btn-primary" id="CreateTr">Traducir</button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Polipéptidos(Proteinas)</h5>
+                    <input type="text" name="polipéptidos" class="form-control" id="barra4"/>
+                    <p class="text2">El siguiente boton nos va a traducir la secuencia del ARNm a proteinas</p>
+                    <button type="button" class="btn btn-primary" id="CreatePo">Traducir Proteinas</button>
+                </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="Delte">Eliminar</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Listo</button>
+                    <button type="button" class="btn btn-secondary" id="Delte">Eliminar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Listo</button>
                 </div>
             </div>
         </div>
@@ -62,8 +62,9 @@
                 <div class="modal-body">
                     <h5 class="modal-title">Secuencia Genetica</h5>
                     <input type="text" class="form-control" id="barra5"/>
-                    <button type="button" class="btn btn-primary" id="CrSG">Generar Secuencia</button>
-                </div>                    
+                    <p class="text2">El siguiente boton nos va a generara una seguencia de ADN aleatoria</p>
+                    <button type="button" class="btn btn-primary" id="CrSG" >Generar Secuencia</button>
+                </div>
                 <div class="modal-body">
                     <h5 class="modal-title">¿Habra metilación?</h5>
                     <input type="text" class="form-control" id="barra6"/>
@@ -73,6 +74,7 @@
                     <input type="text" class="form-control" id="barra8"/>
                     <h5 class="modal-title">¿Qué Canseres Tiene Asociado?</h5>
                     <input type="text" class="form-control" id="barra9"/>
+                    <p class="text2">El siguiente boton va a analizar la secuencia que generamos anteriormente y si en la secuencia se precenta el caso "C,G" nos respondera las preguntas</p>
                     <button type="button" class="btn btn-primary" id="AnGn1">Analisar Gen</button>
                 </div>
                 <div class="modal-footer">
@@ -92,14 +94,48 @@
     </div>
     <div class="miniconteiner">
         <div class="text1">
-        <h1>Terapia Genetica</h1>
-        <p> En esta pagina van a poder trabajar con el gen supresor de tumores "ZAR1"</p>
+            <h1>Terapia Genetica</h1>
+            <p> En esta pagina van a poder informarse sobre el gen supresor de tumores "ZAR1" y sobre el sistema "CRISPR(on/off)"</p>
+        </div>
+        <div class="conCard">
+            <div class="card">
+                <div class="header">
+                    <div class="text1">
+                    <h4>Sistema CRISPR-off</h4>
+                    <svg class="toog" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                        <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/>
+                    </svg>
+                    <img src="/off.png" class="img-on">
+                </div>
+                </div>
+                <div class="card-body">
+                    <div class="text1">
+                    <p class="card-text">El sistema CRISPR-off se utiliz para poder</p>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <div class="text1">
+                    <h4>Sistema CRISPR-on</h4>
+                    <svg class="toog" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                        </svg>
+                        <img src="/on.png" class="img-on">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="text1">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
         </div>
         <img src="/1.png" class="Img1">
         <a class="ZAR1" href="/ZAR1">Mas info sobre ZAR1</a>
         <div class="text1">
             <h1>AMBIENTE</h1>
-            <p>por mas bueno e increible que parezca el gen "ZAR1" y el sistema "CRISPR(on/off)" no son magia y siempre el ambiente en el que permanezcamos y las ctividades que realicemos (por ejemplo: fumar) siempre van a influir en nuestra salud </p>
+            <p>Por mas bueno e increible que parezca el gen "ZAR1" es magia y siempre el ambiente en el que permanezcamos y las ctividades que realicemos (por ejemplo: fumar) siempre van a influir en nuestra salud </p>
         </div>
         <div class="footer">
             <p class="name">Cristian Tello    /   Martina Nievas   </p>

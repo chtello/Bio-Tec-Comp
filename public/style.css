@@ -109,3 +109,32 @@ border-color: black;
     width: 100%;
     height:5%;
 }
+.toog{
+    height: 20%;
+    width: 20%;
+}
+.card{
+    height: 40%;
+    width: 40%;
+    border-color: #000;
+}
+.img-on{
+    border-radius: 20%;
+    height: 40%;
+    width: 40%;
+}
+.header{
+    background-color: #333;
+    border-color: #000;
+}
+.card-body{
+    background-color: #333;
+    border-color: #000;
+}
+.conCard{
+    display: flexbox;
+    justify-content: center;
+}
+.text2{
+    color: #000057;
+}

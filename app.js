@@ -1,4 +1,5 @@
 const express = require("express");
+
 const mongoose = require("mongoose");
 const bodyParser = require('body-parser')
 const app = express();
@@ -25,9 +26,9 @@ app.set("views", __dirname + "/views");
 
 
 mongoose.connect(uri,
-{useNewUrlParser:true,useUnifiedTopology:true})
-.then(console.log("Connected to database"))
-.catch((error)=>console.log("tienes un error, tu error es :" + error));
+    {useNewUrlParser:true,useUnifiedTopology:true})
+    .then(console.log("Connected to database"))
+    .catch((error)=>console.log("tienes un error, tu error es :" + error))
 
 
 app.listen(port, () => {
