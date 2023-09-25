@@ -116,6 +116,7 @@ border-color: black;
 .card{
     height: 40%;
     width: 40%;
+    background-color: #333;
     border-color: #000;
 }
 .img-on{
@@ -137,4 +138,8 @@ border-color: black;
 }
 .text2{
     color: #000057;
+}
+.fun1{
+    border-radius: 20%;
+
 }
